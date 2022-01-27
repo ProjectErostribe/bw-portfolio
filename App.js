@@ -1,10 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Home from './src/Home';
+import Education from './src/Education';
+import Skills from './src/Skills';
+import Footer from './src/Footer';
+import Experience from './src/Experience';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Home />
+      
+      <Skills />
+      <Experience />
+      <Footer />
       <StatusBar style="auto" />
     </View>
   );
