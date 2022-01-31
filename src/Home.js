@@ -1,4 +1,5 @@
 import { StyleSheet, View, Text, Image } from 'react-native';
+
 import Beccahenry from './../_back/images/beccahenry.jpg';
 
 export default function Home() {
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '95%',
-        backgroundColor: '#fff',
+        backgroundColor: '#486766',
         alignItems: 'flex-start',
         justifyContent: 'flex-start'
     },

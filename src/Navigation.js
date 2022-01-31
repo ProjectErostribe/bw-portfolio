@@ -1,26 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 
-export default function Skills() {
-
-    return (
+export default function Navigation() {
+    return(
         <View style={styles.container}>
-            <Text id="skills" style={styles.h1}>Skills</Text>
-            <Text id="skills-header" style={styles.h5}>Languages</Text>
-            <Text style={styles.p}>
-                Shpongle 
+            <Text>
+                <h1>NAVIGATION</h1>
+                <p> RESUME | PORTFOLIO | CONTACT</p>
             </Text>
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '95%',
         marginTop: 100,
         
-        backgroundColor: 'blue',
+        backgroundColor: '#CAF704',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
     },
