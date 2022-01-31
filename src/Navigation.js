@@ -1,11 +1,17 @@
-import { StyleSheet, View, Text, Image } from 'react-native';
+import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { StyleSheet, 
+    View, 
+    Text, 
+    Image 
+} from 'react-native';
 
 export default function Navigation() {
     return(
         <View style={styles.container}>
             <Text>
                 <h1>NAVIGATION</h1>
-                <p> RESUME | PORTFOLIO | CONTACT</p>
+                <p> RESUME | PORTFOLIO | SPEAKING ENGAGEMENTS |CONTACT</p>
             </Text>
         </View>
     );

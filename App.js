@@ -1,5 +1,13 @@
+import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { StyleSheet, 
+  Text,
+  Button, 
+  View,
+  Image,
+  TextInput,
+ } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import Navigation from './src/Navigation';
 import Home from './src/Home';
 import Education from './src/resume/Education';
@@ -7,6 +15,7 @@ import Skills from './src/resume/Skills';
 import Footer from './src/Footer';
 import Experience from './src/resume/Experience';
 import Contact from './src/Contact';
+import Speak from './src/Speak';
 import Portfolio from './src/portfolio/PortfolioMain';
 
 export default function App() {
@@ -15,6 +24,7 @@ export default function App() {
       {/* NAVIGATION COMPONENTS */}
       <Navigation />
       <Portfolio />
+      <Speak />
       <Contact />
       {/* CONTENT COMPONENTS */}
       <Home />

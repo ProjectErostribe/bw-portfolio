@@ -1,5 +1,10 @@
-import debug from 'debug';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, 
+    Text, 
+    View,
+    Image,
+    TextInput,
+ } from 'react-native';
 
 export default function Contact() {
     return (
@@ -8,7 +13,7 @@ export default function Contact() {
                 CONTACT
             </Text>
             <Text style={styles.p}>
-                Contact Me
+                Contact Me 
             </Text>
         </View>
     )
