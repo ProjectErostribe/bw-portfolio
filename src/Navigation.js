@@ -10,8 +10,7 @@ export default function Navigation() {
     return(
         <View style={styles.container}>
             <Text>
-                <h1>NAVIGATION</h1>
-                <p> RESUME | PORTFOLIO | SPEAKING ENGAGEMENTS |CONTACT</p>
+                <p> RESUME | PORTFOLIO | SPEAKING ENGAGEMENTS | CONTACT </p>
             </Text>
         </View>
     );
@@ -19,9 +18,9 @@ export default function Navigation() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        width: '95%',
-        marginTop: 100,
-        
+        width: '100%',
+        flexShrink: 0,
+        flexBasis: 'auto',
         backgroundColor: '#CAF704',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
@@ -39,5 +38,6 @@ const styles = StyleSheet.create({
     },
     p: {
         marginBottom: 20,
+        fontSize: 15,
     }
 });

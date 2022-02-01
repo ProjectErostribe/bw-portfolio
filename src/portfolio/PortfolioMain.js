@@ -1,4 +1,7 @@
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, 
+    View, 
+    Text, 
+    Image } from 'react-native';
 
 export default function Portfolio() {
     return(
@@ -13,8 +16,10 @@ export default function Portfolio() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        width: '95%',
-        marginTop: 100,
+        flexShrink: 0,
+        width: '100%',
+        marginTop: 50,
+        marginBottom: 50,
         
         backgroundColor: '#CAF704',
         alignItems: 'flex-start',

@@ -1,29 +1,37 @@
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet,
+     View, 
+     Text, 
+     Image,
+     Button,
+     TextInput,
+    } from 'react-native';
 
 import Beccahenry from './../_back/images/beccahenry.jpg';
 
 export default function Home() {
     
     return (
-        <><View>
-            <Image style={styles.beccahenry} source={Beccahenry} />
-        </View>
         <View style={styles.container}>
+            <Image style={styles.beccahenry} source={Beccahenry} />
 
-                <Text id="home" style={styles.h1}>Paidamoyo-Janet Azehko</Text>
-                <Text style={styles.p}>
-                    I am a former circus performer, current fashion design student and self taught web developer seeking a career in tech that suits my professional skills, ability to quickly learn new things, and my love of finding creative ways to look at the world.My decade-long career as an artist and performer gives me the unique ability to find creative and empathetic solutions to every problem.I can bring creativity, drive, and passion to your organization.
-                </Text>
-            </View></>
+            <Text>
+                <p>This porfolio features work from my time as a React/React Native Apprentice at Bitwise Industries.</p>
+            </Text>
+        </View>
+
+        
+        
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexShrink: 0,
+        flexBasis: 'auto',
         width: '95%',
         backgroundColor: '#486766',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         justifyContent: 'flex-start'
     },
     h1: {
@@ -32,6 +40,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     p: {
+        fontSize: 15,
         marginTop: 20,
         marginBottom: 20,
     },

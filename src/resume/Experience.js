@@ -72,6 +72,8 @@ export default function Experience() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexShrink: 0,
+        flexBasis: 'auto',
         width: '95%',
         backgroundColor: '#486766',
         alignItems: 'flex-start',

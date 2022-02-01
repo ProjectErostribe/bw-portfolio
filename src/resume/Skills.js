@@ -17,9 +17,10 @@ export default function Skills() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexBasis: 'auto',
         width: '95%',
-        height: '100%',
-        marginTop: 100,
+        marginTop: 10,
+        marginBottom: 10,
         backgroundColor: '#486766',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',

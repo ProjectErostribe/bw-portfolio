@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StyleSheet, 
   Text,
@@ -8,35 +9,55 @@ import { StyleSheet,
   TextInput,
  } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import Header from './src/Header';
 import Navigation from './src/Navigation';
 import Home from './src/Home';
 import Education from './src/resume/Education';
 import Skills from './src/resume/Skills';
 import Footer from './src/Footer';
 import Experience from './src/resume/Experience';
-import Contact from './src/Contact';
+import ContactModal from './src/ContactModal';
 import Speak from './src/Speak';
 import Portfolio from './src/portfolio/PortfolioMain';
+import Resume from './src/resume/Resume';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* NAVIGATION COMPONENTS */}
+      <Header />
+      {/* NAVIGATION COMPONENTS 
+        <Portfolio />
+        <Speak />
+        <Contact />
+      
+      */}
       <Navigation />
-      <Portfolio />
-      <Speak />
-      <Contact />
+      
       {/* CONTENT COMPONENTS */}
-      <Home />
+        <Home />
 
-      {/* RESUME COMPONENTS */}
-      <Skills />
-      <Education />
-      <Experience />
+      {/* CONTACT MODAL */}
+      <ContactModal />    
+         
+      
+      {/* RESUME COMPONENTS 
+        <Resume />
+      */}
+
+      {/* PORTFOLIO COMPONENTS 
+        <Portfolio />
+      */}
+
+      {/* SPEAKING ENGAGEMENTS COMPONENTS 
+        <Speak />
+      */}
+
+      
 
       {/* FOOTER COMPONENTS */}
       <Footer />
-      <StatusBar style="auto" />
+
     </View>
   );
 }
@@ -44,8 +65,25 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '##486766',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexShrink: 0,
+    flexBasis: 'auto',    
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#486766',
   },
+  h1: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+},
+h5: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    
+},
+p: {
+    fontSize: 15,
+    
+}
 });

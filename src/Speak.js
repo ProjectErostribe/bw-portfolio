@@ -4,8 +4,8 @@ export default function Speak() {
     
     return (
         <View style={styles.container}>
-            <Text style={styles.p}>
-                SPEAK
+            <Text>
+                <h1>SPEAKING ENGAGEMENTS</h1>
             </Text>
         </View>
     );
@@ -14,9 +14,11 @@ export default function Speak() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      width: '95%',
-      backgroundColor: '#CAF704',
-      alignItems: 'center',
-      justifyContent: 'center',
+      width: '100%',
+      flexShrink: 0,
+      flexBasis: 'auto',
+      backgroundColor: '#486766',
+      alignItems: 'flex-start',
+      justifyContent: 'flex-start',
     },
   });

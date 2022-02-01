@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Home() {
+export default function Header() {
     
     return (
         <View style={styles.container}>
-            <Text style={styles.p}>
-                Project Erostribe| GitHub | LinkedIn |Twitter
+            <Text style={styles.h1}>
+                PAIDAMOYO-JANET "My.L.E.S" AZEHKO
             </Text>
         </View>
     );
@@ -18,17 +18,19 @@ const styles = StyleSheet.create({
         flexShrink: 0,
         flexBasis: 'auto',
         backgroundColor: '#CAF704',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
+        alignItems: 'center',
+        justifyContent: 'center',
 
     },
     h1: {
-        fontSize: 20,
+        fontSize: 50,
         fontWeight: 'bold',
         marginBottom: 20,
-    },
-    p: {
-        marginTop: 20,
-        marginBottom: 20,
-    },
-  });
+    }
+    
+    
+    
+    
+    
+    
+});

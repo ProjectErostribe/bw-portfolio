@@ -26,6 +26,7 @@ export default function Education() {
         flexBasis: 'auto',
         width: '95%',
         marginTop: 75,
+        marginBottom: 10,
         backgroundColor: '#486766',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
